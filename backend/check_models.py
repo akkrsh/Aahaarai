@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # PASTE YOUR KEY HERE
-API_KEY = "AIzaSyBGoIY2aZESX53obuQQUeVBktvfKy68_rE"
+API_KEY = "paste you api key here"
 genai.configure(api_key=API_KEY)
 
 print("Fetching available models...")
