@@ -285,7 +285,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     // IMPORTANT: Setup for Android Studio Emulator
     // 10.0.2.2 = The Emulator's special way to reach localhost
     // ---------------------------------------------------------
-    var uri = Uri.parse("http://192.168.1.6:8000/analyze"); 
+    var uri = Uri.parse(""); 
     
     try {
       var request = http.MultipartRequest('POST', uri);

@@ -8,7 +8,7 @@ app = FastAPI()
 
 # --- CONFIGURATION ---
 # TODO: PASTE YOUR GOOGLE API KEY HERE
-API_KEY = "AIzaSyCq2Ve3H6p_Iq5mRxTLuqM6yaqXb7a_xg8" 
+API_KEY = "paste your api key here" 
 genai.configure(api_key=API_KEY)
 
 # Use 'gemini-1.5-flash' if 2.0 gives errors
@@ -47,5 +47,10 @@ async def analyze_food(file: UploadFile = File(...)):
         print(f"Error: {e}")
         return {"result": "Dish: Error\nSuggestion: Please try again."}
 
+import os
+
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    import uvicorn
+    # Get the port from Google Cloud (default to 8000 if running locally)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
