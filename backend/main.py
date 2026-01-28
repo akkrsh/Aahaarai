@@ -8,7 +8,7 @@ app = FastAPI()
 
 # --- CONFIGURATION ---
 # TODO: PASTE YOUR GOOGLE API KEY HERE
-API_KEY = "PASTE_YOUR_API_KEY_HERE" 
+API_KEY = "AIzaSyCq2Ve3H6p_Iq5mRxTLuqM6yaqXb7a_xg8" 
 genai.configure(api_key=API_KEY)
 
 # Use 'gemini-1.5-flash' if 2.0 gives errors
