@@ -50,6 +50,9 @@ async def analyze_food(file: UploadFile = File(...)):
 import os
 
 if __name__ == "__main__":
+import os
+
+if __name__ == "__main__":
     import uvicorn
     # Get the port from Google Cloud (default to 8000 if running locally)
     port = int(os.environ.get("PORT", 8000))
